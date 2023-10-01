@@ -1,0 +1,61 @@
+Assignment: Testiranje
+
+Black box testiranje:
+
+1. Testiranje sabiranja 2 broja
+-4+5; 
+-ocekivani rezultat: 9; 
+-dobijeni rezultat: 9; 
+Test: program radi kako treba
+
+2. Testiranje prioriteta racunskih operacija:
+-4+4*2;
+-ocekivani rezultat: 12
+-dobijeni rezultat: 12
+Test: program radi kako treba
+
+3. Testiranje sa negativnim brojevima
+- - 10 -15
+-ocekivani rezultat: -25
+-dobijeni rezultat: -25
+Test: program radi kako treba
+
+4.Testiranje operacija mnozenja i sabiranja uz pomoc zagrada:
+-2*(5-2)
+-ocekivani rezultat: 6
+-dobijeni rezultat: 6
+Test: program radi kako treba
+
+5.
+
+Unit test:
+
+public class testCalculator {
+
+    public static void testAdd() {
+        String sabiranje = "5+2";
+        String ocekivaniRezultat = "7.0";
+        String result = Calculator.Run(sabiranje);
+
+        System.out.println("testAdd(): ");
+        System.out.println("Unete vrednosti: " + sabiranje);
+        System.out.println("Ocekivana vrednost: " + ocekivaniRezultat);
+        System.out.println("Dobijena vrednost: " + result);
+
+        System.out.println("Test: ");
+        if (ocekivaniRezultat.equals(result)) {
+            System.out.println("Passed");
+        } else {
+            System.out.println("Fail");
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        testCalculator.testAdd();
+
+
+    }
+
+}
