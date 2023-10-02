@@ -6,27 +6,32 @@ Black box testiranje:
 -4+5; 
 -ocekivani rezultat: 9; 
 -dobijeni rezultat: 9; 
-Test: program radi kako treba
+Test: program radi kako se od njega ocekuje
 
 2. Testiranje prioriteta racunskih operacija:
 -4+4*2;
 -ocekivani rezultat: 12
 -dobijeni rezultat: 12
-Test: program radi kako treba
+Test: program radi kako se od njega ocekuje
 
 3. Testiranje sa negativnim brojevima
 - - 10 -15
 -ocekivani rezultat: -25
 -dobijeni rezultat: -25
-Test: program radi kako treba
+Test: program radi kako se od njega ocekuje
 
 4.Testiranje operacija mnozenja i sabiranja uz pomoc zagrada:
 -2*(5-2)
 -ocekivani rezultat: 6
--dobijeni rezultat: 6
-Test: program radi kako treba
+-dobijeni rezultat: ERROR
+Test: program ne prihvata koriscenje zagrada
 
-5.
+5. Testiranje- ako ukucam neki broj popout 100000000000000000000 i kliknem na enter umesto da mi ispise isti taj broj dobijam izlza INFINITY
+
+6. Testiranje- kada ukucam samo jedan broj tipa 5 i kliknem na enter dobijam isti taj broj
+.
+.
+.
 
 Unit test:
 
